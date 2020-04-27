@@ -1,0 +1,35 @@
+Alternate letters in uppercase
+A string (only alphabets) is passed as input.
+The printed output should contain alphabets in odd positions in each word in uppercase and alphabets in even positions in a word in lowercase.
+Example input and output:
+If the input is 'tREE GiVES us fruiTS', the output should be 'TrEe GiVeS Us FrUiTs
+'If the input is 'FLoweR iS beauTIFUL', the output should be 'FlOwEr Is BeAuTiFuL'
+ 
+ JAVA CODE:
+ import java.util.*;
+ class gfg
+ {
+ public static void main(String args[])
+ {
+ Scanner in=new Scanner(System.in);
+ String str=in.nextLine();
+ String[] s=str.split(" ");
+ char[] ch=new char[str.length];
+ for(int i=0;i<s.length;i++)
+ {
+ ch=s[i].toCharArray();
+ for(int j=0;j<ch.length;j++)
+ {
+ if(j==0 &&(Character.isLowerCase(ch[j]))
+ {
+ System.out.print(Character.toUpperCase(ch[j]));
+ }
+ else
+ {
+ System.out.print(ch[j]);
+ }
+ }
+ System.out.print(" ");
+ }
+ }
+ }
