@@ -16,11 +16,12 @@ public static void main(String args[])
 Scanner in=new Scanner(System.in);
 int n=in.nextInt();
 int maxavg=0;
-String top="";
+String top=" ";
 for(int i=0;i<n;i++)
 {
   String str=in.next();
-  String stud="";
+  String stud=" ";
+  int avg,sum=0
   String[] st=str.split(":");
   for(int j=0;j<st.length;j++)
   {
