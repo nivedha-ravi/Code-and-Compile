@@ -21,7 +21,7 @@ for(int i=0;i<n;i++)
 {
   String str=in.next();
   String stud=" ";
-  int avg,sum=0
+  int avg,sum=0;
   String[] st=str.split(":");
   for(int j=0;j<st.length;j++)
   {
