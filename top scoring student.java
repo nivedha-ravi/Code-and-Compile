@@ -16,7 +16,6 @@ public static void main(String args[])
 Scanner in=new Scanner(System.in);
 int n=in.nextInt();
 int maxavg=0;
-String stud;
 String top="";
 for(int i=0;i<n;i++)
 {
