@@ -15,32 +15,35 @@ public static void main(String args[])
 {
 Scanner in=new Scanner(System.in);
 int n=in.nextInt();
-int sum,m1,m2,m3,avg,maxavg=0,ctr=0;
+int maxavg=0;
 String stud;
-String top;
-while(ctr<n)
+String top="";
+for(int i=0;i<n;i++)
 {
-stud=in.next();
-m1=in.nextInt();
-m2=in.nextInt();
-m3=in.nextInt();
-sum=m1+m2+m3;
-avg=sum/3;
-if(ctr==0)
-{
-maxavg=avg;
-top=stud;
+  String str=in.next();
+  String stud="";
+  String[] st=str.split(":");
+  for(int j=0;j<st.length;j++)
+  {
+    int run=0;
+    if(j==0)
+    {
+      stud=st[j];
+    }
+    else
+    {
+      run=Integer.parseInt(st[j]);
+      sum+=run;
+    }
+  }
+  avg=sum/3;
+  if(avg>maxavg)
+  {
+    maxavg=avg;
+    top=stud;
+  }
 }
-else
-{
-if(maxavg<avg)
-{
-maxavg=avg;
-top=stud;
-}
-}
-ctr++;
-}
+
 System.out.print(top);
 }
 }
