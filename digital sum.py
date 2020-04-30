@@ -1,0 +1,20 @@
+"""
+INPUT:
+45102
+OUTPUT:
+3
+EXPLANATION:
+4+5+1+0+2=12
+1+2=3
+"""
+
+n=int(input())
+temp=n
+sum=0
+while(n>0):
+    sum+=n%10
+    n/=10
+if(sum>9):
+    print(temp%9)
+else:
+    print(temp%9)
