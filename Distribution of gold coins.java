@@ -43,13 +43,13 @@ public class Hello {
         int j=maxindex+1;
         while(a[maxindex]!=0)
         {
-                if(i>=0 && a[maxindex]!=0)
+                if(i>=0)
                 {
                 a[maxindex]=a[maxindex]-1;
                 a[i]=a[i]+1;
                 i--;
                 }
-                if(j<n && a[maxindex]!=0)
+                if(j<n)
                 {
                     a[maxindex]=a[maxindex]-1;
                     a[j]=a[j]+1;
