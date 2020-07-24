@@ -17,7 +17,6 @@ int ctr=x,max;
 while(ch1<=ch2)
 {
     max=ch1<ch2?10:y;
-
         while(ctr<=max)
         {
             printf("%C%d ",ch1,ctr);
