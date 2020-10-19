@@ -33,6 +33,7 @@ public class Hello {
 	        if(k.equalsIgnoreCase(ans))
 	        {
 	            System.out.print(ss[i]);
+		    break;
 	        }
 	    }
 
