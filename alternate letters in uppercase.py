@@ -6,7 +6,7 @@ Example input and output:
 If the input is 'tREE GiVES us fruiTS', the output should be 'TrEe GiVeS Us FrUiTs
 'If the input is 'FLoweR iS beauTIFUL', the output should be 'FlOwEr Is BeAuTiFuL'
 """
-s=list(input().split(" ")
+s=list(input().split(" "))
 for i in range(0,len(s)):
     l=list(s[i])
     for j in range(0,len(l)):
