@@ -11,7 +11,7 @@ int main() {
 	i=i-2;
 	for(int j=0;j<i;j++)
 	{
-	    if(a[i]%2!=0)
+	    if(a[j]%2!=0)
 	    {
 	        t=t+x;
 	    }
