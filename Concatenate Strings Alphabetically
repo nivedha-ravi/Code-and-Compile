@@ -1,0 +1,34 @@
+Two string values S1 and S2 are passed as the input. The program must concatenate them depending on which string comes first in the alphabetical order.
+
+Input Format:
+The first line will contain S1.
+The second line will contain S2
+
+Output Format:
+The first line will contain the concatenated string value.
+
+Boundary Conditions:
+Length of S1 and S2 is from 3 to 100.
+
+Example Input/Output 1:
+Input:
+apple
+orange
+
+Output:
+appleorange
+
+Example Input/Output 2:
+Input:
+zoo
+tiger
+
+Output:
+tigerzoo
+
+a=input().strip()
+b=input().strip()
+if ord(a[0])>=ord(b[0]): 
+     print(b+a)
+else:
+     print(a+b)
